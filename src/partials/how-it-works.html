@@ -1,26 +1,63 @@
 <section class="container how-it-works">
   <div class="how-it-works">
     <div class="img-it-works">
-      <img src="/src/img/webp/how-it-works.jpg" alt="works" />
+      <picture class="woman-cook">
+        <source
+          media="(min-width: 1158px)"
+          srcset="
+            src/img/How-it-works/desktop/desktop-woman-cooking.jpg   1x,
+            src/img/How-it-works/desktop/desktop-woman-cooking2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            src/img/How-it-works/tablet-woman-cooking.jpg   1x,
+            src/img/How-it-works/tablet-woman-cooking2x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            src/img/How-it-works/mobile-woman-cooking.jpg   1x,
+            src/img/How-it-works/mobile-woman-cooking2x.jpg 2x
+          "
+        />
+      </picture>
     </div>
-
     <div class="section-works">
-      <div class="text-tittle">
-        <p class="title-it-works">
-          To order your vegetable basket, simply follow these easy steps
-        </p>
-        <p class="text-it-works">
-          Our baskets are assembled with care and delivered straight to your
-          doorstep, so you can enjoy the taste of fresh fruit without ever
-          leaving your home.
-        </p>
-      </div>
-      <div class="list-block">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+      <div class="section-works-text">
+        <div class="text-tittle">
+          <p class="title-it-works">
+            To order your vegetable basket, simply follow these easy steps
+          </p>
+          <p class="text-it-works">
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
+          </p>
+        </div>
+        <div class="list-block">
+          <ol class="list-works">
+            <li class="item-works">
+              <p class="text-item-works">
+                Just choose the vegetable you want to order by clicking on the
+                checkboxes next to it.
+              </p>
+            </li>
+            <li class="item-works">
+              <p class="text-item-works">
+                Click on the basket and fill out the form.
+              </p>
+            </li>
+            <li class="item-works">
+              <p class="text-item-works">
+                Sit back and relax! Your fresh vegetables basket will be
+                delivered.
+              </p>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   </div>
