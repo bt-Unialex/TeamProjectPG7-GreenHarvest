@@ -14,9 +14,7 @@
   -webkit-text-size-adjust: 100%;*/
 }
 
-main {
-  flex-grow: 1;
-}
+
 
 .visually-hidden {
   position: absolute;
