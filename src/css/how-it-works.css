@@ -19,6 +19,7 @@ ol {
 }
 
 .img-it-works {
+  padding: 100px;
   width: 640px;
   height: 760px;
   display: flex;
@@ -77,14 +78,6 @@ ol {
   height: 560px;
 }
 
-.item-works {
-  border-radius: 15px;
-  padding: 12px 25px 12px 24px;
-  width: 440px;
-  height: 76px;
-  background-color: #fbfbfb;
-}
-
 .text-item-works {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -98,7 +91,31 @@ ol {
   color: #141414;
 }
 
-.list-block {
-  display: block;
-  padding-left: 0;
+.list-works {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  width: 440px;
+  height: 276px;
+}
+.item-works {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 12px 25px 12px 24px;
+  width: 440px;
+  height: 76px;
+  background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .img-it-works {
+    background-image: url(/src/img/How-it-works/desktop/desktop-woman-cooking2x.jpg);
+  }
 }
