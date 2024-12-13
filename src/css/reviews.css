@@ -63,30 +63,11 @@
     color: #04030666;
 }
 
-.rewiews-item-mobile{
-    display: none;
-}
 .name-rewiews{
     padding: 0 7px;
 }
-@media (min-width: 768px) {
-    .rewiews-list{
-        display: flex;
-        gap: 24px;
-    }
 
-    .rewiews-item-mobile{
-        display: block;
-    }
-    
-    .rewiews-item-tablet{
-        display: none;
-    }
-    
-    .rewiews-item{
-        width: calc((100% - 24px) / 2);
-    }
-
+@media only screen and (min-width: 768px) {
     .rewiews-text-box{
         width: 553px;
         height: 192px;
@@ -112,12 +93,3 @@
     }
 }
 
-@media (min-width: 1280px) {
-    .rewiews-item-tablet{
-        display: block;
-    }
-
-    .rewiews-item{
-        width: calc((100% - 48px) / 3);
-    }
-}

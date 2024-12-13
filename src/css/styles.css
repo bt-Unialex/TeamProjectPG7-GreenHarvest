@@ -4,6 +4,9 @@
   | default @import url()
   |============================
 */
+/* swiper.js */
+@import url(./swiper-bundle.min.css);
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -19,3 +22,4 @@
 @import url('./reviews.css');
 @import url('./your-order.css');
 @import url('./footer.css');
+
