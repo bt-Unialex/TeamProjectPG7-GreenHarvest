@@ -4,7 +4,6 @@ const swiper = new Swiper('.swiper', {
   
   slidesPerView: 1,
   spaceBetween: 24,
-  height: 344,
 
 
   breakpoints: {
