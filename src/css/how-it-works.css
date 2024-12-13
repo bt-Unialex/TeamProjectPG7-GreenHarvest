@@ -1,11 +1,11 @@
-ol {
-  list-style: none;
+.visually-hidden {
+  display: none;
 }
-
 .how-it-works {
   display: flex;
   justify-content: center;
 }
+
 .section-works {
   margin: 100px;
   width: 640px;
@@ -118,4 +118,11 @@ ol {
   .img-it-works {
     background-image: url(/src/img/How-it-works/desktop/desktop-woman-cooking2x.jpg);
   }
+}
+
+.circle-svg {
+  border-radius: 100%;
+  fill: #7a3145;
+  stroke-width: 5px;
+  stroke: #d4bfc4;
 }
