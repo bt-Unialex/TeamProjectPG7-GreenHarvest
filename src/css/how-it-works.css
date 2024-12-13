@@ -115,8 +115,11 @@
 
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
   only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .img-it-works {
-    background-image: url(/src/img/How-it-works/desktop/desktop-woman-cooking2x.jpg);
+  .img-it-works .woman-cook {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(/img/How-it-works/desktop/desktop-woman-cooking2x.jpg);
   }
 }
 
