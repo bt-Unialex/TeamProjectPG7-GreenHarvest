@@ -63,7 +63,7 @@
     color: #04030666;
 }
 
-.rewiews-item-mobile{
+.rewiews-item:nth-child(2), .rewiews-item:nth-child(3){
     display: none;
 }
 .name-rewiews{
@@ -75,12 +75,8 @@
         gap: 24px;
     }
 
-    .rewiews-item-mobile{
+    .rewiews-item:nth-child(2){
         display: block;
-    }
-    
-    .rewiews-item-tablet{
-        display: none;
     }
     
     .rewiews-item{
@@ -113,7 +109,7 @@
 }
 
 @media (min-width: 1280px) {
-    .rewiews-item-tablet{
+    .rewiews-item:nth-child(3){
         display: block;
     }
 
