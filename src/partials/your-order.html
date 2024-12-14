@@ -1,82 +1,102 @@
 <section class="your-order">
   <div class="container">
-    <h2 class="order-section-title">
-      Fresh <span class="order-title-part">Harvest</span> Box has got you
-      covered
-    </h2>
-    <p class="order-section-text">
-      Our boxes are packed with delicious, nutritious vegetables, perfect for
-      anyone looking to eat healthier or support local farmers. Order your box
-      today and start enjoying the best that nature has to offer!
-    </p>
-    <div class="order-form-container">
-      <p class="order-form-caption">
-        Ordering <span class="form-caption-part">from us</span> is quick and
-        easy! Fill out <span class="form-caption-part">the form</span> below and
-        we will contact you !
+    <div class="order-title-wrapper">
+      <h2 class="order-section-title">
+        Fresh <span class="order-title-part">Harvest</span> Box has got you
+        covered
+      </h2>
+      <p class="order-section-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
       </p>
-      <form class="order-form" name="order-form">
-        <label class="form-label"
-          ><input class="form-input" type="text" name="user-name"
-        /></label>
-        <label class="form-label"
-          ><input class="form-input" type="email" name="user-email"
-        /></label>
-        <label class="form-label">
-          <textarea class="form-input" name="user-comment"></textarea>
-        </label>
-        <button class="btn" type="submit">Send</button>
-      </form>
     </div>
-    <div class="order-socials-container">
-      <picture class="order-picture">
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ../img/your-order/desktop-women-section-order.jpg    1x,
-            ../img/your-order/desktop-women-section-order@2x.jpg 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ../img/your-order/tablet-women-section-order.jpg    1x,
-            ../img/your-order/tablet-women-section-order@2x.jpg 2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ../img/your-order/mobile-women-section-order.jpg    1x,
-            ../img/your-order/mobile-women-section-order@2x.jpg 2x
-          "
-        />
-        <img
-          class="order-image"
-          src="../img/your-order/desktop-women-section-order.jpg"
-          alt="woman and fruit"
-          width="428"
-          height="352"
-        />
-      </picture>
-      <p class="socials-caption">Follow us on our social networks:</p>
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a class="socials-link" href="https://www.instagram.com/goitclub/"
-            >Instagram</a
-          >
-        </li>
-        <li class="socials-item">
-          <a class="socials-link" href="https://www.facebook.com/goITclub/"
-            >Facebook</a
-          >
-        </li>
-        <li class="socials-item">
-          <a class="socials-link" href="https://www.youtube.com/c/GoIT"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+    <div class="order-container">
+      <div class="order-form-wrapper">
+        <p class="order-form-caption">
+          Ordering <span class="form-caption-part">from us</span> is quick and
+          easy! Fill out <span class="form-caption-part">the form</span> below
+          and we will contact you !
+        </p>
+        <form class="order-form" name="order-form">
+          <div class="form-input-wrapper">
+            <label class="form-label"
+              ><input
+                class="form-input"
+                type="text"
+                name="user-name"
+                placeholder="Full Name"
+            /></label>
+            <label class="form-label"
+              ><input
+                class="form-input"
+                type="email"
+                name="user-email"
+                placeholder="Email"
+            /></label>
+            <label class="form-label">
+              <textarea
+                class="form-input"
+                name="user-comment"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+          </div>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="order-socials-wrapper">
+        <picture class="order-socials-picture">
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ../img/your-order/desktop-women-section-order.jpg    1x,
+              ../img/your-order/desktop-women-section-order@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/your-order/tablet-women-section-order.jpg    1x,
+              ../img/your-order/tablet-women-section-order@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/your-order/mobile-women-section-order.jpg    1x,
+              ../img/your-order/mobile-women-section-order@2x.jpg 2x
+            "
+          />
+          <img
+            class="order-socials-image"
+            src="../img/your-order/desktop-women-section-order.jpg"
+            alt="woman and fruit"
+            width="536"
+            height="352"
+          />
+        </picture>
+        <p class="socials-caption">Follow us on our social networks:</p>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-link" href="https://www.instagram.com/goitclub/"
+              >Instagram</a
+            >
+          </li>
+          <span class="socials-link">/</span>
+          <li class="socials-item">
+            <a class="socials-link" href="https://www.facebook.com/goITclub/"
+              >Facebook</a
+            >
+          </li>
+          <span class="socials-link">/</span>
+          <li class="socials-item">
+            <a class="socials-link" href="https://www.youtube.com/c/GoIT"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
