@@ -1,6 +1,4 @@
 .footer {
-  width: 375px;
-  margin: 0 auto;
   background-color: #7a3145;
 }
 
@@ -84,14 +82,17 @@
   .footer {
     width: 768px;
   }
+
   .footer-container {
     padding: 32px;
     display: flex;
     flex-direction: column;
   }
+
   .logo {
     margin-right: 32px;
   }
+
   .footer-p {
     font-size: 16px;
     line-height: 1.25;
@@ -114,6 +115,7 @@
     line-height: 1.25;
     margin-top: 24px;
   }
+
   .footer-link-privacy {
     padding-top: 100px;
   }
