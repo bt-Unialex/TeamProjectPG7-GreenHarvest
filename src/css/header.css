@@ -57,11 +57,11 @@ header .container {
       
   }
 }
-.btn-shop {
+.shop {
   display: none;
 }
 @media only screen and (min-width: 1280px) {
-  .btn-shop {
+  .shop {
     display: block;
       font-weight: 600;
       font-size: 18px;
