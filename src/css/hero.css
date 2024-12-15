@@ -4,13 +4,6 @@
     background-color: #576f35;
     color: #fff;
   }
-
-  .container {
-    min-width: 320px;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 0 0;
-  }
   
   .content-wrapper {
     display: flex;
@@ -114,11 +107,6 @@
       justify-content: flex-end
     }
     
-    .image-content picture {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
     
   }
   @media only screen and (min-width: 375px) {
