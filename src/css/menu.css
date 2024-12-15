@@ -7,7 +7,7 @@
   flex-direction: row-reverse;
   width: 100%;
   height: 100%;
-  background: rgba(20, 20, 20, 0.4);
+  background-color: rgba(20, 20, 20, 0.4);
 
   pointer-events: none;
   opacity: 0;
@@ -103,7 +103,7 @@
 
 .mob-nav-item:hover,
 .mob-nav-item:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #7a3145;
 }
 
@@ -126,7 +126,7 @@
   padding: 16px 31px;
   width: 175px;
   height: 52px;
-  background: #7a3145;
+  background-color: #7a3145;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color, border;
