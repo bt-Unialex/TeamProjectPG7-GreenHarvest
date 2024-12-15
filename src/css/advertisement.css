@@ -1,6 +1,7 @@
 .advertisement {
   background-color: #fbfbfb;
 }
+
 .adv-text {
   font-weight: 600;
   font-size: 48px;
@@ -9,23 +10,32 @@
   text-transform: uppercase;
   color: #141414;
 }
+
 @media only screen and (min-width: 768px) {
   .adv-text {
     font-size: 64px;
     line-height: 1;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .adv-text {
     font-size: 76px;
   }
 }
+
 .adv-discount {
   display: block;
   color: #fbfbfb;
   background-color: #576f35;
   border-radius: 12px;
-  min-width: 335px;
+  /* min-width: 335px; */
+}
+
+@media only screen and (max-width: 374px) {
+  .adv-discount {
+    font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -33,6 +43,7 @@
     min-width: 704px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .adv-discount {
     min-width: 1080px;
