@@ -1,4 +1,9 @@
 .how-it-works {
+  display: none;
+}
+
+.hiw-container {
+  display: none;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -139,7 +144,7 @@ only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 }
 
 .section-works-text {
-  width: 440px;
+  /* width: 440px; */
   height: 180px;
   display: flex;
   align-items: flex-start;

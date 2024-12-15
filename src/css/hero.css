@@ -8,15 +8,11 @@
   .content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .text-content {
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 335px;
+    /* max-width: 335px; */
   }
 
   .hero-title {
@@ -32,7 +28,18 @@
     line-height: 1.43;
   }
 
-  @media only screen and (max-width: 375px) {
+  .image-content {
+    width: 100%;
+    height: 372px;
+    background-image: url(/img/hero/mobile-vegetables.jpg);
+
+    /* <source srcset="/img/hero/mobile-vegetables.jpg 1x, /img/hero/mobile-vegetables@2x.jpg 2x"
+    media="(max-width: 767px)"><source srcset="/img/hero/tablet-vegetables.jpg 1x, /img/hero/tablet-vegetables@2x.jpg 2x"
+    media="(min-width: 768px) and (max-width: 1279px)"><source srcset="/img/hero/desktop-vegetables.jpg 1x, /img/hero/desktop-vegetables@2x.jpg 2x"
+    media="(min-width: 1280px)"><img src="/img/hero/desktop-vegetables.jpg" alt="Fresh vegetables" loading="lazy"> */
+  }
+
+  @media only screen and (max-width: 374px) {
     .text-content h1 {
       font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
     }
@@ -54,21 +61,16 @@
       max-width: 704px;
     }
 
-    .text-content h1 {
+    .hero-title {
       font-size: 76px;
       font-weight: 600;
       margin-bottom: 24px;
     }
 
-    .text-content p {
+    .hero-description {
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 52px;
-    }
-
-    .container {
-      min-width: 768px;
-      max-width: 1024px;
     }
   }
 
@@ -79,7 +81,7 @@
       justify-content: space-between;
       gap: 30px;
       padding: 80px 0;
-      max-width: 1280px;
+      /* max-width: 1280px; */
       margin: 0 auto;
       /* Центрує по горизонталі */
     }
@@ -90,14 +92,14 @@
       flex-basis: 50%;
     }
 
-    .text-content h1 {
+    .hero-title {
       font-size: 76px;
       font-weight: 600;
       line-height: 1.2;
       margin-bottom: 128px;
     }
 
-    .text-content p {
+    .hero-description {
       font-size: 16px;
       font-weight: 500;
       line-height: 1.5;
@@ -109,11 +111,4 @@
       display: flex;
       justify-content: flex-end
     }
-
-    .image-content picture {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-
   }
