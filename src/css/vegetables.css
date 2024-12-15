@@ -5,13 +5,18 @@
 
 .vegetables-title {
     font-weight: 600;
-    font-size: 48px;
+    font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
     line-height: 108%;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 375px){
+    .vegetables-title{
+        font-size: 48px;
+    }
+}
 
 .vegetables-title-part {
     color: #d4bfc4;
