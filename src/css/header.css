@@ -12,19 +12,16 @@
 } */
 
 .header {
-  margin-top: 32px;
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 768px) {
   .header {
-    padding-top: 32px;
+    margin-top: 32px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .header {
-    position: absolute;
-    width: 100%;
-    padding: 0;
-  }
 }
 header .container {
   display: flex;
