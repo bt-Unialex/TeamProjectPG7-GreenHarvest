@@ -20,29 +20,37 @@
         </p>
         <form class="order-form" name="order-form">
           <div class="form-input-wrapper">
-            <label class="form-label"
-              ><input
-                class="form-input"
-                type="text"
-                name="user-name"
-                placeholder="Full Name"
-            /></label>
-            <label class="form-label"
-              ><input
-                class="form-input"
-                type="email"
-                name="user-email"
-                placeholder="Email"
-            /></label>
-            <label class="form-label">
-              <textarea
-                class="form-input"
-                name="user-comment"
-                placeholder="Comment"
-              ></textarea>
-            </label>
+            <label class="visually-hidden form-label" for="user-name"
+              >Name</label
+            ><input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Full Name"
+              required
+            />
+            <label class="visually-hidden form-label" for="user-email"
+              >Email</label
+            ><input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              required
+            />
+            <label class="visually-hidden form-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="form-input"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
           </div>
-          <button class="btn" type="submit">Send</button>
+          <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
       <div class="order-socials-wrapper">
