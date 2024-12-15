@@ -32,11 +32,6 @@
     font-weight: 500;
   }
   
-  .image-content img {
-    max-width: 100%;
-    height: auto;
-  }
-  
   @media only screen and (min-width: 768px) {
     section {
       padding-top: 100px;
@@ -106,7 +101,12 @@
       display: flex;
       justify-content: flex-end
     }
-    
+
+    .image-content picture {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
     
   }
   @media only screen and (min-width: 375px) {
