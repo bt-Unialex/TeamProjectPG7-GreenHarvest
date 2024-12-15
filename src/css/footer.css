@@ -27,7 +27,7 @@
 }
 
 .footer-nav-item:not(:last-child) {
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .footer-nav-link {
@@ -86,7 +86,7 @@
   }
 
   .footer-nav-item:not(:last-child) {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   .footer-address-link {
@@ -107,7 +107,7 @@
 
 @media only screen and (min-width: 1280px) {
   .footer {
-    border-top: 52px;
+    padding-top: 52px;
     padding-bottom: 52px;
   }
 
