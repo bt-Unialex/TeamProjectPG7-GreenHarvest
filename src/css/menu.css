@@ -130,12 +130,14 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color, border;
 }
-
-.shop-btn:hover,
-.shop-btn:focus {
-  background-color: #fbfbfb;
-  color: #7a3145;
-  border: 1px solid #fbfbfb;
+@media only screen and (max-width: 1280px) {
+  .shop-btn:hover,
+  .shop-btn:focus,
+  .shop-btn:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+    border: 1px solid #fbfbfb;
+  }
 }
 
 @media only screen and (min-width: 768px) {

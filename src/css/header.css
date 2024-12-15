@@ -12,7 +12,7 @@
 } */
 
 .header {
-  padding-top: 20px;
+  margin-top: 32px;
 }
 @media only screen and (min-width: 768px) {
   .header {
@@ -21,28 +21,27 @@
 }
 @media only screen and (min-width: 1280px) {
   .header {
-    position: relative;
+    position: absolute;
+    width: 100%;
     padding: 0;
   }
 }
 header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 1280px) {
   .nav-list {
     display: flex;
-      align-items: center;
-      gap: 10px;
+    align-items: center;
+    gap: 8px;
   }
-    .nav-wrapper {
-              position: absolute;
-              top: 32px;
-              right: 100px;
-              display: flex;
-              align-items: center;
-              gap: 20px;
-            }
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
 .nav-item {
   display: none;
@@ -50,11 +49,11 @@ header .container {
 @media only screen and (min-width: 1280px) {
   .nav-item {
     display: block;
+  }
+  .nav-link {
     border: 1px solid #fbfbfb;
-      border-radius: 12px;
-      padding: 12px;
-
-      
+    border-radius: 12px;
+    padding: 12px;
   }
 }
 .shop {
@@ -63,16 +62,24 @@ header .container {
 @media only screen and (min-width: 1280px) {
   .shop {
     display: block;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1.11111;
-      letter-spacing: -0.01em;
-      text-transform: uppercase;
-      color: #fbfbfb;
-      border-radius: 30px;
-      border: none;
-      padding: 16px 32px;
-      background-color: #7a3145;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    border-radius: 30px;
+    padding: 16px 32px;
+    background-color: #7a3145;
+  }
+  .shop:hover,
+  .shop:focus {
+    background-color: #D4BFC4;
+    color: #7a3145;
+  }
+  .shop:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
   }
 }
 .svg-header {
@@ -81,13 +88,7 @@ header .container {
 @media only screen and (min-width: 768px) {
   .svg-header {
     max-width: 216px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .svg-header {
-    position: absolute;
-      top: 48px;
-            left: 100px;
+    height: 20px;
   }
 }
 .svg-header-menu {
@@ -96,8 +97,8 @@ header .container {
 
 .menu-open {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   background-color: transparent;
   border: none;
@@ -107,16 +108,15 @@ header .container {
     display: none;
   }
 }
-.menu-open-icon{
-    width: 32px;
-      height: 32px;
-      stroke-width: 3px;
-        stroke: #fbfbfb;
+.menu-open-icon {
+  width: 32px;
+  height: 32px;
+  fill: #fbfbfb;
 }
 @media only screen and (min-width: 768px) {
   .menu-open-icon {
-      width: 40px;
-        height: 40px;
-        stroke-width: 4px;
+    width: 40px;
+    height: 40px;
+    stroke-width: 4px;
   }
 }
