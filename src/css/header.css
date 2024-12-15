@@ -10,15 +10,51 @@
   transform-origin: center;
   animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
 } */
- .nav-item{
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    top: 32px;
+  }
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
   display: none;
- }
- .btn-shop{
+}
+.btn-shop {
   display: none;
- }
-.svg-header{
+}
+.svg-header {
   fill: #fbfbfb;
 }
-.svg-header-menu{
-    fill: #fbfbfb;
+.svg-header-menu {
+  fill: #fbfbfb;
+}
+
+.menu-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-open {
+    width: 40px;
+    height: 40px;
+  }
 }
