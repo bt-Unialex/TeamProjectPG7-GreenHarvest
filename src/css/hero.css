@@ -1,8 +1,8 @@
-  section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #576f35;
-    color: #fff;
+  .hero {
+    /* padding-top: 80px; */
+    /* padding-bottom: 80px; */
+    /* background-color: #576f35; */
+    /* color: #fff; */
   }
 
   .content-wrapper {
@@ -19,17 +19,17 @@
     max-width: 335px;
   }
 
-  .text-content h1 {
+  .hero-title {
     font-size: 52px;
     font-weight: 600;
     margin-bottom: 20px;
-    text-align: left;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
   }
 
-  .text-content p {
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 500;
+  .hero-description {
+    line-height: 1.43;
   }
 
   @media only screen and (max-width: 375px) {
