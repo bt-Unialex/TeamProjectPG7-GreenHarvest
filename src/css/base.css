@@ -1,10 +1,10 @@
 :root {
-  font-family: "Inter Tight", serif;
-  font-size: 16px;
-  line-height: 1.25;
+  font-family: 'Inter Tight', serif;
+  font-size: 14px;
+  line-height: 1.2;
   font-weight: 500;
 
-  color: #FBFBFB;
+  color: #fbfbfb;
   background-color: #576f35;
 
   /*font-synthesis: none;
@@ -13,8 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;*/
 }
-
-
 
 .visually-hidden {
   position: absolute;
@@ -27,4 +25,8 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }

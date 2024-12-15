@@ -1,0 +1,36 @@
+.text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08333;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+@media only screen and (min-width: 768px) {
+  .text {
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .text {
+    font-size: 76px;
+  }
+}
+.discount {
+  color: #fbfbfb;
+  background-color: #576f35;
+  border-radius: 12px;
+  min-width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+  .discount {
+    min-width: 704px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .discount {
+    min-width: 1080px;
+  }
+}

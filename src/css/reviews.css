@@ -4,12 +4,18 @@
 }
 .rewiews-text{
     font-weight: 600;
-    font-size: 48px;
+    font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
     line-height: 52px;
     color: #141414;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 375px){
+    .rewiews-text{
+        font-size: 48px;
+    }
 }
 
 .rewiews-text-span{
@@ -31,6 +37,7 @@
     padding: 20px 16px;
     border: 1px solid #D4BFC4;
     border-radius: 24px;
+    cursor: pointer;
 }
 
 .rewiews-item-box{
@@ -63,30 +70,11 @@
     color: #04030666;
 }
 
-.rewiews-item-mobile{
-    display: none;
-}
 .name-rewiews{
     padding: 0 7px;
 }
-@media (min-width: 768px) {
-    .rewiews-list{
-        display: flex;
-        gap: 24px;
-    }
 
-    .rewiews-item-mobile{
-        display: block;
-    }
-    
-    .rewiews-item-tablet{
-        display: none;
-    }
-    
-    .rewiews-item{
-        width: calc((100% - 24px) / 2);
-    }
-
+@media only screen and (min-width: 768px) {
     .rewiews-text-box{
         width: 553px;
         height: 192px;
@@ -112,12 +100,8 @@
     }
 }
 
-@media (min-width: 1280px) {
-    .rewiews-item-tablet{
-        display: block;
-    }
-
+@media only screen and (min-width: 1280px){
     .rewiews-item{
-        width: calc((100% - 48px) / 3);
+        cursor: auto;
     }
 }
