@@ -34,13 +34,17 @@
   height: 372px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/img/hero/mobile-vegetables.jpg);
+  background-image: linear-gradient(to bottom,
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)), url(/img/hero/mobile-vegetables.jpg);
 }
 
 @media only screen and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .image-content {
-    background-image: url(/img/hero/mobile-vegetables@2x.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)), url(/img/hero/mobile-vegetables@2x.jpg);
   }
 }
 
@@ -80,14 +84,18 @@
 
   .image-content {
     height: 536px;
-    background-image: url(/img/hero/tablet-vegetables.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)), url(/img/hero/tablet-vegetables.jpg);
   }
 }
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media only screen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) and (min-width: 768px) {
   .image-content {
-    background-image: url(/img/hero/tablet-vegetables@2x.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)), url(/img/hero/tablet-vegetables@2x.jpg);
   }
 }
 
@@ -119,13 +127,17 @@
   .image-content {
     width: 640px;
     height: 796px;
-    background-image: url(/img/hero/desktop-vegetables.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)), url(/img/hero/desktop-vegetables.jpg);
   }
 }
 
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media only screen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) and (min-width: 1280px) {
   .image-content {
-    background-image: url(/img/hero/desktop-vegetables@2x.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)), url(/img/hero/desktop-vegetables@2x.jpg);
   }
 }
