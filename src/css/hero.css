@@ -84,7 +84,7 @@
   }
 }
 
-@media only screen and (min-resolution: 192dpi),
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .image-content {
     background-image: url(/img/hero/tablet-vegetables@2x.jpg);
@@ -123,7 +123,7 @@
   }
 }
 
-@media only screen and (min-resolution: 192dpi),
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .image-content {
     background-image: url(/img/hero/desktop-vegetables@2x.jpg);
