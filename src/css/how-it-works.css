@@ -439,3 +439,50 @@
   stroke-width: 5px;
   stroke: #d4bfc4;
 }
+
+.svg-text1::before {
+  position: absolute;
+
+  margin: 11px 18px 11px 21px;
+  counter-increment: svg-text1;
+  content: counter(svg-text1);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+.svg-text2::before {
+  position: absolute;
+  width: 7px;
+  height: 20px;
+  margin: 11px 18px 11px 20px;
+  counter-increment: svg-text2 2;
+  content: counter(svg-text2);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+.svg-text3::before {
+  position: absolute;
+  width: 7px;
+  height: 20px;
+  margin: 11px 18px 11px 20px;
+  counter-increment: svg-text2 3;
+  content: counter(svg-text2);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
