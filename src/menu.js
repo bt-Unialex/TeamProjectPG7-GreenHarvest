@@ -2,6 +2,7 @@ const menuOpenBtn = document.querySelector('.js-menu-open');
 const menuOverlay = document.querySelector('.menu-overlay');
 const menuCloseBtn = document.querySelector('.js-menu-close');
 const menuLinks = document.querySelectorAll('.mob-nav-item a');
+const shopBtn = document.querySelector('.shop-btn');
 
 function openMenu() {
   menuOverlay.classList.add('is-open');
@@ -21,3 +22,5 @@ menuLinks.forEach(link => {
     }
   });
 });
+
+shopBtn.addEventListener('click', closeMenu);
