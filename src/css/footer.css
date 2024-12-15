@@ -1,0 +1,148 @@
+.footer {
+  background-color: #7a3145;
+}
+
+.footer-container {
+  padding-top: 40px;
+  padding-bottom: 14px;
+}
+
+.logo {
+  fill: #fbfbfb;
+}
+
+.footer-p {
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 40px;
+  line-height: 1.43;
+  width: 335px;
+}
+
+.footer-text {
+  padding-top: 40px;
+}
+
+.footer-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  padding-top: 40px;
+  width: 215px;
+}
+
+.footer-link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-contacts {
+  margin-top: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  font-size: 14px;
+}
+
+.footer-link-privacy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.footer-link-privacy ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer-container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-right: 32px;
+  }
+
+  .footer-p {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 265px;
+    padding-top: 24px;
+  }
+
+  .footer-text {
+    gap: 24px;
+    margin-left: auto;
+  }
+
+  .footer-link {
+    padding-top: 64px;
+    margin-left: auto;
+  }
+
+  .footer-contacts {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
+  }
+
+  .footer-link-privacy {
+    padding-top: 100px;
+  }
+
+  .footer-link-privacy ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 318px;
+  }
+
+  .link {
+    line-height: 1.25;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    width: 1280px;
+  }
+
+  .footer-container {
+    padding: 52px 100px;
+  }
+
+  .footer-link-privacy ul {
+    gap: 686px;
+  }
+}
