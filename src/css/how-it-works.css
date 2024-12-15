@@ -1,7 +1,3 @@
-.visually-hidden {
-  display: none;
-}
-
 .how-it-works {
   display: flex;
   align-items: flex-start;
@@ -68,7 +64,8 @@
   }
 }
 
-@media only screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media only screen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .img-it-works .woman-cook {
     border-radius: 30px;
     width: 335px;
@@ -82,7 +79,7 @@
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .img-it-works .woman-cook {
     width: 640px;
     height: 640px;
@@ -95,7 +92,7 @@
 }
 
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .img-it-works .woman-cook {
     width: 440px;
     height: 560px;
@@ -140,6 +137,7 @@
     flex-direction: column;
   }
 }
+
 .section-works-text {
   width: 440px;
   height: 180px;
