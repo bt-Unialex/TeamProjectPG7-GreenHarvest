@@ -4,40 +4,47 @@
     background-color: #576f35;
     color: #fff;
   }
-  
+
   .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  
+
   .text-content {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 335px;
   }
-  
+
   .text-content h1 {
     font-size: 52px;
     font-weight: 600;
     margin-bottom: 20px;
     text-align: left;
   }
-  
+
   .text-content p {
     font-size: 14px;
     line-height: 1.2;
     font-weight: 500;
   }
-  
+
+  @media only screen and (max-width: 375px) {
+    .text-content h1 {
+      font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
+    }
+
+  }
+
   @media only screen and (min-width: 768px) {
     section {
       padding-top: 100px;
       padding-bottom: 100px;
     }
-  
+
     .content-wrapper {
       flex-direction: column;
     }
@@ -56,7 +63,7 @@
     .text-content p {
       font-size: 16px;
       font-weight: 500;
-      margin-bottom: 52px; 
+      margin-bottom: 52px;
     }
 
     .container {
@@ -64,38 +71,39 @@
       max-width: 1024px;
     }
   }
-  
+
   @media only screen and (min-width: 1280px) {
     .content-wrapper {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      gap: 30px; 
+      gap: 30px;
       padding: 80px 0;
       max-width: 1280px;
-      margin: 0 auto; /* Центрує по горизонталі */
+      margin: 0 auto;
+      /* Центрує по горизонталі */
     }
-    
+
     .text-content {
       text-align: left;
       max-width: 502px;
       flex-basis: 50%;
     }
-    
+
     .text-content h1 {
       font-size: 76px;
       font-weight: 600;
       line-height: 1.2;
-      margin-bottom: 128px; 
+      margin-bottom: 128px;
     }
-    
+
     .text-content p {
       font-size: 16px;
       font-weight: 500;
       line-height: 1.5;
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
     }
-  
+
     .image-content {
       flex-basis: 50%;
       display: flex;
@@ -107,11 +115,5 @@
       max-width: 100%;
       height: auto;
     }
-    
-  }
-  @media only screen and (min-width: 375px) {
-    .text-content h1 {
-      font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
-    }
-    
+
   }
