@@ -2,9 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: row-reverse;
+  z-index: 999;
   width: 100%;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.4);
@@ -24,13 +22,13 @@
 }
 
 .menu-wrapper {
-  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 296px;
+  padding-bottom: 52px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 296px 100px 52px;
+  align-items: center;
   background-color: #576f35;
 
   transform: translateX(100%);
@@ -39,13 +37,17 @@
 }
 
 .menu-overlay.is-open .menu-wrapper {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 @media only screen and (min-width: 768px) {
   .menu-wrapper {
-    width: 351px;
-    padding: 360px 97px 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45.7vw;
+    padding-top: 360px;
+    padding-bottom: 48px;
   }
 }
 
@@ -76,25 +78,22 @@
 }
 
 .mob-menu-nav {
-  margin: 0 auto auto;
+  margin-bottom: auto;
 }
 
-.mob-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.mob-nav-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .mob-nav-item {
-  font-size: 14px;
   line-height: 143%;
   text-align: center;
 
   border: 1px solid #fbfbfb;
   border-radius: 12px;
   padding: 12px 11px;
-  width: 118px;
-  height: 44px;
+  min-width: 118px;
+  min-height: 44px;
   cursor: pointer;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -110,22 +109,22 @@
 @media only screen and (min-width: 768px) {
   .mob-nav-item {
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
   }
 }
 
 .shop-btn {
   font-weight: 600;
   font-size: 18px;
-  line-height: 111%;
-  letter-spacing: -0.01em;
+  line-height: 1.11;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   text-align: center;
 
   border-radius: 30px;
-  padding: 16px 31px;
-  width: 175px;
-  height: 52px;
+  padding: 16px 41px;
+  min-width: 175px;
+  min-height: 52px;
   background-color: #7a3145;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,7 +140,8 @@
 
 @media only screen and (min-width: 768px) {
   .shop-btn {
-    width: 157px;
+    padding: 16px 31px;
+    min-width: 157px;
   }
 }
 
