@@ -1,0 +1,151 @@
+.how-it-works {
+    padding: 0;
+}
+
+.hiw-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.hiw-image-content {
+    padding: 40px 20px;
+    background: #7a3145;
+}
+
+.hiw-img {
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 374px) {
+    .hero-image-content {
+        width: 99.2vw;
+    }
+}
+
+.hiw-body {
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.hiw-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hiw-descr {
+    margin-bottom: 40px;
+}
+
+.hiw-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    counter-reset: step;
+}
+
+.hiw-item {
+    background-color: #fbfbfb;
+    min-height: 76px;
+    border-radius: 15px;
+    padding: 12px 27px 12px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.hiw-item-text {
+    position: relative;
+    line-height: 1.42857;
+    color: #858585;
+}
+
+.hiw-item-text::before {
+    counter-increment: step;
+    content: "" counter(step);
+    text-align: center;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    left: -81px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    background-color: #7a3145;
+    border: solid 5px #d4bfc4;
+
+    color: #fbfbfb;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .hiw-image-content {
+        padding: 100px 64px;
+    }
+
+    .hiw-img {
+        width: 640px;
+        height: 640px;
+    }
+
+    .hiw-body {
+        padding: 100px 164px;
+    }
+
+    .hiw-title {
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .hiw-descr {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+
+    .hiw-wrap {
+        row-gap: 24px;
+    }
+
+    .hiw-item-text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hiw-container {
+
+        flex-direction: row;
+    }
+
+    .hiw-image-content {
+        width: 640px;
+        padding: 100px;
+    }
+
+    .hiw-img {
+        width: 440px;
+        height: 560px;
+    }
+
+    .hiw-body {
+        padding: 100px;
+    }
+}
