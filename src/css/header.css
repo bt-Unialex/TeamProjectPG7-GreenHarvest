@@ -1,4 +1,3 @@
-
 .header {
   position: absolute;
   width: 100%;
@@ -39,12 +38,14 @@ header .container {
   .nav-item {
     display: block;
   }
+
   .nav-link {
     border: 1px solid #fbfbfb;
     border-radius: 12px;
     padding: 12px;
     font-size: 16px;
     line-height: 125%;
+    display: block;
   }
 }
 
@@ -65,11 +66,13 @@ header .container {
     padding: 16px 32px;
     background-color: #7a3145;
   }
+
   .shop:hover,
   .shop:focus {
     background-color: #d4bfc4;
     color: #7a3145;
   }
+
   .shop:active {
     background-color: #fbfbfb;
     color: #7a3145;
