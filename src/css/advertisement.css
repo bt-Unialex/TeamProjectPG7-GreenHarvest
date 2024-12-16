@@ -6,23 +6,10 @@
 .adv-text {
   font-weight: 600;
   font-size: 48px;
-  line-height: 1.08333;
+  line-height: 52px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
-}
-
-@media only screen and (min-width: 768px) {
-  .adv-text {
-    font-size: 64px;
-    line-height: 1;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .adv-text {
-    font-size: 76px;
-  }
 }
 
 .adv-discount {
@@ -30,23 +17,50 @@
   color: #fbfbfb;
   background-color: #576f35;
   border-radius: 12px;
-  /* min-width: 335px; */
-}
-
-@media only screen and (max-width: 374px) {
-  .adv-discount {
-    font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
-  }
 }
 
 @media only screen and (min-width: 768px) {
-  .adv-discount {
-    min-width: 704px;
+  .adv-text {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .adv-discount{
+    display: initial;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .adv-text {
+    font-size: 76px;
+    line-height: 76px;
+  }
+  .advertisement-text-box{
+    padding-right: 10px;
+    padding-left: 16px;
+  }
   .adv-discount {
-    min-width: 1080px;
+    position: relative; 
+    display: inline-block;
+    color: #fbfbfb;
+    background-color: #576f35;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .adv-discount::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: -15px;
+    height: 100%;
+    width: 16px;
+    background-color: #576f35;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
 }
+
+
+
+
+
