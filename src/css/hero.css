@@ -107,7 +107,7 @@
   .hero-container {
     flex-direction: row;
   }
-
+}
   @media only screen and (min-width: 1280px) {
     .content-wrapper {
       flex-direction: row;
