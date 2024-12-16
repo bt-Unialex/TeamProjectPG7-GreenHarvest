@@ -10,10 +10,13 @@
   row-gap: 40px;
   margin-bottom: 80px;
 }
-
+.footer-logo-link{
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
 .footer-logo {
   fill: #fbfbfb;
-  margin-bottom: 14px;
 }
 
 .footer-description {
@@ -75,6 +78,14 @@
     margin-bottom: 100px;
   }
 
+  .footer-logo-link{
+    margin-bottom: 24px;
+  }
+  .footer-logo {
+    width: 216px;
+    height: 20px;
+  }
+
   .footer-description {
     font-size: 16px;
     line-height: 1.25;
@@ -109,11 +120,6 @@
   .footer {
     padding-top: 52px;
     padding-bottom: 52px;
-  }
-
-  .footer-logo {
-    width: 216px;
-    height: 20px;
   }
 
   .footer-body {
