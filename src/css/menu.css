@@ -100,7 +100,7 @@
   transition-property: background-color, color;
 }
 
-.mob-nav-item:hover,
+.mob-nav-item:active,
 .mob-nav-item:focus {
   background-color: #fbfbfb;
   color: #7a3145;
@@ -131,11 +131,13 @@
   transition-property: background-color, color, border;
 }
 
-.shop-btn:hover,
-.shop-btn:focus {
-  background-color: #fbfbfb;
-  color: #7a3145;
-  border: 1px solid #fbfbfb;
+@media only screen and (max-width: 1280px) {
+  .shop-btn:focus,
+  .shop-btn:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+    border: 1px solid #fbfbfb;
+  }
 }
 
 @media only screen and (min-width: 768px) {

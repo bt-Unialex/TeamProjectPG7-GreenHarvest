@@ -111,6 +111,11 @@
     padding-bottom: 52px;
   }
 
+  .footer-logo {
+    width: 216px;
+    height: 20px;
+  }
+
   .footer-body {
     margin-bottom: 124px;
   }
@@ -120,5 +125,9 @@
     gap: 0 121px;
   }
 
+  .footer-nav-item:hover,
+  .footer-nav-item:focus {
+    text-decoration: underline;
+  }
 
 }
