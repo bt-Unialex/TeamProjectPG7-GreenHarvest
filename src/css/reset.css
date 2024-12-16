@@ -30,6 +30,7 @@ button {
 
 img {
   display: block;
-  width: auto;
+  width: 100%;
+  /* width: auto; */
   height: auto;
 }
