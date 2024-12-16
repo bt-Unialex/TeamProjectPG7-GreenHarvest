@@ -33,21 +33,18 @@
   height: 372px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(20, 20, 20, 0.2),
-      rgba(20, 20, 20, 0.2)
-    ),
+      rgba(20, 20, 20, 0.2)),
     url(/img/hero/mobile-vegetables.jpg);
 }
 
-@media only screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media only screen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .image-content {
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
+        rgba(20, 20, 20, 0.2)),
       url(/img/hero/mobile-vegetables@2x.jpg);
   }
 }
@@ -88,21 +85,18 @@
 
   .image-content {
     height: 536px;
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
+        rgba(20, 20, 20, 0.2)),
       url(/img/hero/tablet-vegetables.jpg);
   }
 
-  @media only screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media only screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .image-content {
-      background-image: linear-gradient(
-          to bottom,
+      background-image: linear-gradient(to bottom,
           rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)
-        ),
+          rgba(20, 20, 20, 0.2)),
         url(/img/hero/tablet-vegetables@2x.jpg);
     }
   }
@@ -127,6 +121,7 @@
     margin: 0 auto;
     /* Центрує по горизонталі */
   }
+
   .text-content {
     width: 640px;
     padding-top: 232px;
@@ -146,21 +141,18 @@
   .image-content {
     width: 640px;
     height: 796px;
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
+        rgba(20, 20, 20, 0.2)),
       url(/img/hero/desktop-vegetables.jpg);
   }
 
-  @media only screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media only screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .image-content {
-      background-image: linear-gradient(
-          to bottom,
+      background-image: linear-gradient(to bottom,
           rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)
-        ),
+          rgba(20, 20, 20, 0.2)),
         url(/img/hero/desktop-vegetables@2x.jpg);
     }
   }
