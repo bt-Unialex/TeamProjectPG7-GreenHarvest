@@ -28,6 +28,7 @@
               name="user-name"
               id="user-name"
               placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               required
             />
             <label class="visually-hidden form-label" for="user-email"
@@ -38,12 +39,10 @@
               name="user-email"
               id="user-email"
               placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               required
             />
-            <label
-              class="visually-hidden form-label"
-              for="user-comment"
-              required
+            <label class="visually-hidden form-label" for="user-comment"
               >Comment</label
             >
             <textarea
@@ -97,7 +96,6 @@
               >Instagram</a
             >
           </li>
-          <span class="socials-link">/</span>
           <li class="socials-item">
             <a
               class="socials-link"
@@ -106,7 +104,6 @@
               >Facebook</a
             >
           </li>
-          <span class="socials-link">/</span>
           <li class="socials-item">
             <a
               class="socials-link"

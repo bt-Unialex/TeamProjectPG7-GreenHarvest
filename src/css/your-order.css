@@ -1,5 +1,12 @@
 .order-title-wrapper {
     max-width: 640px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-title-wrapper {
+    margin-bottom: 52px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -38,7 +45,6 @@
 
 @media only screen and (min-width: 768px) {
   .order-section-text {
-    margin-bottom: 52px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -152,11 +158,11 @@
   outline: none;
 }
 
-.form-input:focus-within:invalid {
+.form-input:not(:last-child):focus-within:invalid {
   border-color: #e74a3b;
 }
 
-.form-input:focus-within:valid {
+.form-input:not(:last-child):focus-within:valid {
   border-color: #3cbc81;
 }
 
@@ -202,7 +208,7 @@
     background-color: #7a3145;
     color: inherit;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color, color;
+    transition-property: background-color, color, outline;
 }
 
 .form-btn:hover, .form-btn:focus {
@@ -213,6 +219,7 @@
 .form-btn:active {
   background-color: transparent;
   color: #7a3145;
+  outline: 1px solid #7a3145;
 }
 
 .order-socials-wrapper {
@@ -273,25 +280,39 @@
 }
 
 .socials-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
 }
 
 @media only screen and (min-width: 768px) {
   .socials-list {
-    gap: 12px;
+    gap: 31px;
+  }
+}
+
+.socials-item:not(:last-child)::after {
+  content: "/";
+  position: absolute;
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+@media only screen and (min-width: 768px) {
+  .socials-item:not(:last-child)::after {
+    margin-left: 12px;
   }
 }
 
 .socials-link {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: text-decoration;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 .socials-link:hover,
