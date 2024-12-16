@@ -1,0 +1,159 @@
+/* #region  */
+.hero {
+  padding: 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 0;
+}
+
+.text-content {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  line-height: 1.43;
+}
+
+.image-content {
+  height: 372px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom,
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)),
+    url(/img/hero/mobile-vegetables.jpg);
+}
+
+@media only screen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .image-content {
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)),
+      url(/img/hero/mobile-vegetables@2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .hero-title {
+    font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
+  }
+
+  .image-content {
+    height: 99.2vw;
+  }
+}
+
+/* #endregion */
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    row-gap: 52px;
+  }
+
+  .text-content {
+    padding-top: 120px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+    margin-bottom: 24px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 603px;
+  }
+
+  .image-content {
+    height: 536px;
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)),
+      url(/img/hero/tablet-vegetables.jpg);
+  }
+
+  @media only screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .image-content {
+      background-image: linear-gradient(to bottom,
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)),
+        url(/img/hero/tablet-vegetables@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .content-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    /* padding: 80px 0;  це ломає верстку, раджу прибрати */
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    /* Центрує по горизонталі */
+  }
+
+  .text-content {
+    width: 640px;
+    padding-top: 232px;
+    padding-left: 100px;
+    padding-right: 38px;
+  }
+
+  .hero-title {
+    width: 502px;
+    margin-bottom: 128px;
+  }
+
+  .hero-description {
+    width: 472px;
+  }
+
+  .image-content {
+    width: 640px;
+    height: 796px;
+    background-image: linear-gradient(to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)),
+      url(/img/hero/desktop-vegetables.jpg);
+  }
+
+  @media only screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .image-content {
+      background-image: linear-gradient(to bottom,
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)),
+        url(/img/hero/desktop-vegetables@2x.jpg);
+    }
+  }
+}
