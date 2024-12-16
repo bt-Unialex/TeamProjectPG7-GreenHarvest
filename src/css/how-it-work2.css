@@ -9,7 +9,15 @@
   flex-direction: column;
 }
 
+.how-it-works-img {
+  border-radius: 30px;
+}
+
 @media only screen and (max-width: 374px) {
+  .how-it-works-img {
+    border-radius: 30px;
+  }
+
   .how-it-works-img {
     width: 87.5vw;
   }
