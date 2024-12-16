@@ -16,33 +16,37 @@
   width: 100%;
   margin-top: 20px;
 }
+
 @media only screen and (min-width: 768px) {
   .header {
     margin-top: 32px;
   }
 }
-@media only screen and (min-width: 1280px) {
-}
+
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 @media only screen and (min-width: 1280px) {
   .nav-list {
     display: flex;
     align-items: center;
     gap: 8px;
   }
+
   .nav-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
   }
 }
+
 .nav-item {
   display: none;
 }
+
 @media only screen and (min-width: 1280px) {
   .nav-item {
     display: block;
@@ -51,11 +55,15 @@ header .container {
     border: 1px solid #fbfbfb;
     border-radius: 12px;
     padding: 12px;
+    font-size: 16px;
+    line-height: 125%;
   }
 }
+
 .shop {
   display: none;
 }
+
 @media only screen and (min-width: 1280px) {
   .shop {
     display: block;
@@ -71,7 +79,7 @@ header .container {
   }
   .shop:hover,
   .shop:focus {
-    background-color: #D4BFC4;
+    background-color: #d4bfc4;
     color: #7a3145;
   }
   .shop:active {
@@ -79,15 +87,18 @@ header .container {
     color: #7a3145;
   }
 }
+
 .svg-header {
   fill: #fbfbfb;
 }
+
 @media only screen and (min-width: 768px) {
   .svg-header {
-    max-width: 216px;
+    width: 216px;
     height: 20px;
   }
 }
+
 .svg-header-menu {
   fill: #fbfbfb;
 }
@@ -100,16 +111,19 @@ header .container {
   background-color: transparent;
   border: none;
 }
+
 @media only screen and (min-width: 1280px) {
   .menu-open {
     display: none;
   }
 }
+
 .menu-open-icon {
   width: 32px;
   height: 32px;
   fill: #fbfbfb;
 }
+
 @media only screen and (min-width: 768px) {
   .menu-open-icon {
     width: 40px;
