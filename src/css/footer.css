@@ -111,6 +111,11 @@
     padding-bottom: 52px;
   }
 
+  .footer-logo {
+    width: 216px;
+    height: 20px;
+  }
+
   .footer-body {
     margin-bottom: 124px;
   }
