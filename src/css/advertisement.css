@@ -1,8 +1,9 @@
-.advertisement{
+
+.advertisement {
   background-color: #fbfbfb;
 }
 
-.text {
+.adv-text {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.08333;
@@ -10,31 +11,42 @@
   text-transform: uppercase;
   color: #141414;
 }
+
 @media only screen and (min-width: 768px) {
-  .text {
+  .adv-text {
     font-size: 64px;
     line-height: 1;
   }
 }
+
 @media only screen and (min-width: 1280px) {
-  .text {
+  .adv-text {
     font-size: 76px;
   }
 }
-.discount {
+
+.adv-discount {
+  display: block;
   color: #fbfbfb;
   background-color: #576f35;
   border-radius: 12px;
-  min-width: 335px;
+  /* min-width: 335px; */
+}
+
+@media only screen and (max-width: 374px) {
+  .adv-discount {
+    font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .discount {
+  .adv-discount {
     min-width: 704px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
-  .discount {
+  .adv-discount {
     min-width: 1080px;
   }
 }
