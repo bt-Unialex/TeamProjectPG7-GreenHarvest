@@ -13,7 +13,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
   <script type="module" crossorigin src="/TeamProjectPG7-GreenHarvest/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/TeamProjectPG7-GreenHarvest/assets/index-BMuvDH1r.css">
+  <link rel="stylesheet" crossorigin href="/TeamProjectPG7-GreenHarvest/assets/index-6PylFPdA.css">
 </head>
 
 <body>
@@ -433,12 +433,37 @@
         </p>
         <form class="order-form" name="order-form">
           <div class="form-input-wrapper">
-            <label class="visually-hidden form-label" for="user-name">Name</label><input class="form-input" type="text"
-              name="user-name" id="user-name" placeholder="Full Name" required />
-            <label class="visually-hidden form-label" for="user-email">Email</label><input class="form-input"
-              type="email" name="user-email" id="user-email" placeholder="Email" required />
-            <label class="visually-hidden form-label" for="user-comment" required>Comment</label>
-            <textarea class="form-input" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+            <label class="visually-hidden form-label" for="user-name"
+              >Name</label
+            ><input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <label class="visually-hidden form-label" for="user-email"
+              >Email</label
+            ><input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <label class="visually-hidden form-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="form-input"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
           </div>
           <button class="form-btn" type="submit">Send</button>
         </form>
@@ -457,12 +482,10 @@
             <a class="socials-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram<span
                 class="socials-link">/</span></a>
           </li>
-
           <li class="socials-item">
             <a class="socials-link" href="https://www.facebook.com/goITclub/" target="_blank">Facebook<span
                 class="socials-link">/</span></a>
           </li>
-
           <li class="socials-item">
             <a class="socials-link" href="https://www.youtube.com/c/GoIT" target="_blank">Youtube</a>
           </li>
