@@ -24,3 +24,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.footer-logo-link:focus,
+.logo:focus {
+  outline: auto;
+}
