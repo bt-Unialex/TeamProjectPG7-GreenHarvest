@@ -34,3 +34,7 @@ img {
   /* width: auto; */
   height: auto;
 }
+
+*:focus {
+  outline: none;
+}
