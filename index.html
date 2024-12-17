@@ -19,7 +19,7 @@
 <body>
   <header class="header">
   <div class="container">
-    <a class="logo" href="./index.html">
+    <a class="logo" href="./index.html" aria-label="Green Harvest logo">
       <svg class="svg-header" width="168" height="16">
         <use href="/TeamProjectPG7-GreenHarvest/assets/sprite-hUcZ_6Ft.svg#logo"></use>
       </svg>
@@ -41,7 +41,7 @@
       <a class="shop" href="#your-order">Shop now</a>
     </div>
     <!-- Mob and tab menu open btn (burger menu) -->
-    <button class="menu-open js-menu-open" type="button">
+    <button class="menu-open js-menu-open" type="button" aria-label="open navigation menu">
       <svg class="menu-open-icon" width="40" height="40">
         <use href="/TeamProjectPG7-GreenHarvest/assets/sprite-hUcZ_6Ft.svg#burger-menu"></use>
       </svg>
@@ -54,7 +54,7 @@
     <div class="menu-overlay js-menu">
   <div class="menu-wrapper">
     <div class="margin-operator"></div>
-    <button class="menu-close-btn js-menu-close" type="button">
+    <button class="menu-close-btn js-menu-close" type="button" aria-label="close navigation menu">
       <svg class="close-icon" width="32" height="32">
         <use href="/TeamProjectPG7-GreenHarvest/assets/sprite-hUcZ_6Ft.svg#close-icon"></use>
       </svg>
@@ -62,9 +62,7 @@
     <nav class="mob-menu-nav">
       <ul class="mob-nav-list">
         <li class="mob-nav-item">
-          <a class="mob-nav-links" href="#how-it-works"
-            >How&nbsp;It&nbsp;Works</a
-          >
+          <a class="mob-nav-links" href="#how-it-works">How&nbsp;It&nbsp;Works</a>
         </li>
         <li class="mob-nav-item">
           <a class="mob-nav-links" href="#vegetables">Vegetables</a>
@@ -77,7 +75,6 @@
     <a class="shop-btn" href="#your-order">Shop&nbsp;now</a>
   </div>
 </div>
-
     <section class="hero">
     <div class="container hero-container">
         <div class="text-content">
@@ -427,102 +424,51 @@
         </p>
         <form class="order-form" name="order-form">
           <div class="form-input-wrapper">
-            <label class="visually-hidden form-label" for="user-name"
-              >Name</label
-            ><input
-              class="form-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder="Full Name"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              required
-            />
-            <label class="visually-hidden form-label" for="user-email"
-              >Email</label
-            ><input
-              class="form-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              required
-            />
-            <label class="visually-hidden form-label" for="user-comment"
-              >Comment</label
-            >
-            <textarea
-              class="form-input"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Comment"
-            ></textarea>
+            <label class="visually-hidden form-label" for="user-name">Name</label><input class="form-input" type="text"
+              name="user-name" id="user-name" placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+            <label class="visually-hidden form-label" for="user-email">Email</label><input class="form-input"
+              type="email" name="user-email" id="user-email" placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+            <label class="visually-hidden form-label" for="user-comment">Comment</label>
+            <textarea class="form-input" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
           </div>
           <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
       <div class="order-socials-wrapper">
         <picture class="order-socials-picture">
-          <source
-            media="(min-width: 1280px)"
-            srcset="/TeamProjectPG7-GreenHarvest/assets/desktop-women-section-order-BRCul9qO.jpg 1x, /TeamProjectPG7-GreenHarvest/assets/desktop-women-section-order@2x-CbEoHu40.jpg 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="/TeamProjectPG7-GreenHarvest/assets/tablet-women-section-order-C1PBAvDW.jpg 1x, /TeamProjectPG7-GreenHarvest/assets/tablet-women-section-order@2x-CyAaEStH.jpg 2x"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="/TeamProjectPG7-GreenHarvest/assets/mobile-women-section-order-BXBEeQBC.jpg 1x, /TeamProjectPG7-GreenHarvest/assets/mobile-women-section-order@2x-TK3r0OXr.jpg 2x"
-          />
-          <img
-            class="order-socials-image"
-            src="/TeamProjectPG7-GreenHarvest/assets/desktop-women-section-order-BRCul9qO.jpg"
-            alt="woman and fruit"
-            width="536"
-            height="352"
-          />
+          <source media="(min-width: 1280px)" srcset="/TeamProjectPG7-GreenHarvest/assets/desktop-women-section-order-BRCul9qO.jpg 1x, /TeamProjectPG7-GreenHarvest/assets/desktop-women-section-order@2x-CbEoHu40.jpg 2x" />
+          <source media="(min-width: 768px)" srcset="/TeamProjectPG7-GreenHarvest/assets/tablet-women-section-order-C1PBAvDW.jpg 1x, /TeamProjectPG7-GreenHarvest/assets/tablet-women-section-order@2x-CyAaEStH.jpg 2x" />
+          <source media="(max-width: 767px)" srcset="/TeamProjectPG7-GreenHarvest/assets/mobile-women-section-order-BXBEeQBC.jpg 1x, /TeamProjectPG7-GreenHarvest/assets/mobile-women-section-order@2x-TK3r0OXr.jpg 2x" />
+          <img class="order-socials-image" src="/TeamProjectPG7-GreenHarvest/assets/desktop-women-section-order-BRCul9qO.jpg" alt="woman and fruit"
+            width="536" height="352" />
         </picture>
         <p class="socials-caption">Follow us on our social networks:</p>
         <ul class="socials-list">
           <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://www.instagram.com/goitclub/"
-              target="_blank"
-              >Instagram</a
-            >
+            <a class="socials-link" href="https://www.instagram.com/goitclub/" target="_blank"
+              rel="noreferrer">Instagram</a>
           </li>
           <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://www.facebook.com/goITclub/"
-              target="_blank"
-              >Facebook</a
-            >
+            <a class="socials-link" href="https://www.facebook.com/goITclub/" target="_blank"
+              rel="noreferrer">Facebook</a>
           </li>
           <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://www.youtube.com/c/GoIT"
-              target="_blank"
-              >Youtube</a
-            >
+            <a class="socials-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noreferrer">Youtube</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </section>
-
   </main>
 
   <footer class="footer">
   <div class="container">
     <div class="footer-body">
       <div>
-        <a class="footer-logo-link" href="./index.html">
+        <a class="footer-logo-link" href="./index.html" aria-label="Green Harvest logo">
           <svg class="footer-logo" width="168" height="16">
             <use href="/TeamProjectPG7-GreenHarvest/assets/sprite-hUcZ_6Ft.svg#logo"></use>
           </svg>
@@ -547,7 +493,8 @@
             </li>
             <li class="footer-nav-item">
               <a href="https://www.google.com.ua/maps/place/Varex+Imaging+Visitor+Entrance/@40.7332093,-111.9617062,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35bbcfb1369:0x260ab4842496c9e4!8m2!3d40.7332053!4d-111.9591313!16s%2Fg%2F1tcxvqmt?hl=ru&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                class="footer-address-link footer-link-after" target="_blank">1678 S.Pioneer Road Salt Lake City UT
+                class="footer-address-link footer-link-after" target="_blank" rel="noreferrer">1678 S.Pioneer Road Salt
+                Lake City UT
                 84104</a>
             </li>
           </ul>
