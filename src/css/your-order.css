@@ -1,6 +1,6 @@
 .order-title-wrapper {
-    max-width: 640px;
-    margin-bottom: 40px;
+  max-width: 640px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,7 +161,7 @@
   border-color: #3cbc81;
 }
 
-.form-input:focus, .form-input:hover {
+.form-input:focus {
   border-color: #7a3145;
 }
 
@@ -192,25 +192,26 @@
 }
 
 .form-btn {
-    display: block;
-    margin: 0 auto;
-    border: none;
-    width: 100%;
-    border-radius: 30px;
-    padding: 16px 0;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #7a3145;
-    color: inherit;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color, color, outline;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #7a3145;
+  color: inherit;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, outline;
 }
 
-.form-btn:hover, .form-btn:focus {
+.form-btn:hover,
+.form-btn:focus {
   background-color: #d4bfc4;
   color: #7a3145;
 }
@@ -308,7 +309,7 @@
   .socials-item:not(:last-child)::after {
     margin-left: 12px;
   }
-} 
+}
 
 .socials-link {
   font-weight: 600;
