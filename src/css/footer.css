@@ -72,6 +72,17 @@
   transform: scale(1);
 }
 
+.footer-footer-wrap {
+  display: flex;
+  column-gap: 8px;
+}
+
+.footer-footer-policy:last-child::before {
+  content: "/";
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+
 @media only screen and (min-width: 1280px) {
   .footer-link-after:hover::after {
     transform: scale(1);
@@ -141,6 +152,11 @@
   }
 
   .footer-footer-link {
+    line-height: 1.25;
+    font-size: 16px;
+  }
+
+  .footer-footer-policy:last-child::before {
     line-height: 1.25;
     font-size: 16px;
   }
