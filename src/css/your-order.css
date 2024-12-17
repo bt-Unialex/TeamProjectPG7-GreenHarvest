@@ -148,11 +148,11 @@
   }
 }
 
-.form-input:not(:last-child):not(:placeholder-shown):focus-within:invalid {
+.form-input:not(:last-child):not(:placeholder-shown):invalid {
   border-color: #e74a3b;
 }
 
-.form-input:not(:last-child):not(:placeholder-shown):focus-within:valid {
+.form-input:not(:last-child):not(:placeholder-shown):valid {
   border-color: #3cbc81;
 }
 
