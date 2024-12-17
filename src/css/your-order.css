@@ -161,7 +161,7 @@
   border-color: #3cbc81;
 }
 
-.form-input:focus {
+.form-input:focus, .form-input:hover {
   border-color: #7a3145;
 }
 
@@ -282,18 +282,22 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 23px;
+  gap: 8px;
 }
 
 @media only screen and (min-width: 768px) {
   .socials-list {
-    gap: 31px;
+    gap: 12px;
   }
+}
+
+.socials-item {
+  display: flex;
 }
 
 .socials-item:not(:last-child)::after {
   content: "/";
-  position: absolute;
+  position: relative;
   margin-left: 8px;
   font-weight: 600;
   font-size: 18px;
@@ -304,7 +308,7 @@
   .socials-item:not(:last-child)::after {
     margin-left: 12px;
   }
-}
+} 
 
 .socials-link {
   font-weight: 600;
@@ -314,7 +318,18 @@
   text-transform: uppercase;
 }
 
-.socials-link:hover,
-.socials-link:focus {
-   text-decoration: underline; /*Це залишаешь? */
+.socials-link::after {
+  display: block;
+  content: "";
+  position: relative;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: #fbfbfb;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-link:hover::after {
+  opacity: 1;
 }
