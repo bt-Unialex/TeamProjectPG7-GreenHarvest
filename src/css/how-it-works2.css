@@ -1,6 +1,5 @@
 .how-it-work {
   padding: 0;
-  width: 100%;
 }
 
 .how-it-work .container {
@@ -13,23 +12,12 @@
   border-radius: 30px;
 }
 
-@media only screen and (max-width: 374px) {
-  .how-it-works-img {
-    border-radius: 30px;
-  }
-
-  .how-it-works-img {
-    width: 87.5vw;
-  }
-}
-
 .work-image-box {
   padding: 40px 20px;
   background-color: #7a3145;
 }
 
-.work-list-box{
-  background-color: #576f35;
+.work-list-box {
   padding: 80px 20px;
 }
 
@@ -48,8 +36,6 @@
 }
 
 .how-it-works-small-text {
-  font-weight: 500;
-  font-size: 14px;
   line-height: 143%;
   color: #fbfbfb;
 }
@@ -66,17 +52,18 @@
 }
 
 .work-item {
-  padding: 12px 27px 12px 100px;
+  padding: 12px 24px 12px 100px;
   background-color: #fbfbfb;
+  min-height: 76px;
   border-radius: 12px;
 }
-.work-item:nth-child(2){
-  padding: 12px 59px 12px 100px;
+
+@media only screen and (max-width: 767px) {
+  .work-item:nth-child(2) {
+    padding: 18px 59px 18px 100px;
+  }
 }
 
-.work-boxes:nth-child(3){
-  padding: 12px 24px 12px 100px;
-}
 .work-item-content {
   display: flex;
   align-items: center;
@@ -108,12 +95,10 @@
   letter-spacing: -0.01em;
 }
 
-
 .work-item-text {
-  color: #14141499;
-  font-size: 14px;
-  font-weight: 500;
   position: relative;
+  line-height: 1.43;
+  color: #858585;
 }
 
 .work-item-text-span {
@@ -122,11 +107,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .how-it-work {
-    padding: auto;
-    width: 100%;
-  }
-
   .work-image-box {
     padding: 100px 64px;
   }
@@ -154,19 +134,19 @@
   }
 
   .work-item-text {
-    color: #14141499;
     font-size: 16px;
-    font-weight: 500;
-    text-align: start;
+    line-height: 1.25;
   }
 
-  .work-item:nth-child(1){
+  .work-item:nth-child(1) {
     padding: 18px 15px 18px 100px;
   }
-  .work-item:nth-child(2){
+
+  .work-item:nth-child(2) {
     padding: 28px 17px 28px 100px;
   }
-  .work-item:nth-child(3){
+
+  .work-item:nth-child(3) {
     padding: 18px 17px 18px 100px;
   }
 }
@@ -180,11 +160,11 @@
     width: auto;
   }
 
-  .work-image-box{
+  .work-image-box {
     padding: 100px;
   }
 
-  .work-list-box{
+  .work-list-box {
     padding: 100px;
   }
 
