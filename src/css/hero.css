@@ -130,7 +130,8 @@
 
   .image-content {
     width: 640px;
-    height: 796px;
+    min-height: 796px;
+    height: auto;
     background-image: linear-gradient(to bottom,
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)),

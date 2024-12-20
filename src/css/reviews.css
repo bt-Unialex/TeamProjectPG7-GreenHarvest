@@ -1,8 +1,8 @@
-
-.rewiews{
+.rewiews {
     background-color: #FBFBFB;
 }
-.rewiews-text{
+
+.rewiews-text {
     font-weight: 600;
     font-size: calc(41px + (48 - 41) * ((100vw - 320px) / (375 - 320)));
     line-height: 52px;
@@ -12,47 +12,48 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 375px){
-    .rewiews-text{
+@media only screen and (min-width: 375px) {
+    .rewiews-text {
         font-size: 48px;
     }
 }
 
-.rewiews-text-span{
+.rewiews-text-span {
     color: #576F35;
 }
 
-.rewiews-text-small{
+.rewiews-text-small {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     color: #141414;
 
 }
-.rewiews-text-box{
+
+.rewiews-text-box {
     margin-bottom: 20px;
 }
 
-.rewiews-item{
+.rewiews-item {
     padding: 20px 16px;
     border: 1px solid #D4BFC4;
     border-radius: 24px;
     cursor: pointer;
 }
 
-.rewiews-item-box{
+.rewiews-item-box {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.rewiews-person-img{
+.rewiews-person-img {
     width: 56px;
     height: 56px;
     margin-bottom: 24px;
 }
 
-.person-name{
+.person-name {
     font-size: 18px;
     text-align: center;
     font-weight: 600;
@@ -62,46 +63,46 @@
     letter-spacing: -0.01em;
 }
 
-.person-rewiews{
+.person-rewiews {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #04030666;
+    color: #858585;
 }
 
-.name-rewiews{
+.name-rewiews {
     padding: 0 7px;
 }
 
 @media only screen and (min-width: 768px) {
-    .rewiews-text-box{
+    .rewiews-text-box {
         width: 553px;
         height: 192px;
         margin-bottom: 52px;
     }
-    
-    .rewiews-text{
+
+    .rewiews-text {
         margin-bottom: 24px;
         font-size: 64px;
         line-height: 64px;
     }
-    
-    .rewiews-text-small{
+
+    .rewiews-text-small {
         font-size: 16px;
     }
-    
-    .rewiews-item{
+
+    .rewiews-item {
         padding: 20px;
     }
 
-    .person-rewiews{
+    .person-rewiews {
         font-size: 16px;
     }
 }
 
-@media only screen and (min-width: 1280px){
-    .rewiews-item{
+@media only screen and (min-width: 1280px) {
+    .rewiews-item {
         cursor: auto;
     }
 }
